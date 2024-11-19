@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.services-page {
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  font-size: 2rem;
+  color: #00457c; /* Starehe Boys Blue */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  color: #00457c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Fee Structure */
+.fee-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fee-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.fee-label {
+  font-weight: bold;
+  color: #00457c;
+}
+
+.fee-amount {
+  color: #00457c; /* Changed from green to Starehe Boys Blue */
+  font-weight: bold;
+}
+
+.optional-title {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.optional-fees {
+  margin-bottom: 30px;
+}
+
+.optional-fees label {
+  display: block;
+  margin-bottom: 10px;
+  color: #00457c; /* Blue for labels */
+}
+
+.optional-fees input[type="radio"],
+.optional-fees input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.checkout-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #00457c; /* Starehe Boys Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.checkout-button, .edit-invoice {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-button:hover, .edit-invoice:hover {
+  background-color: #00356b; /* Darker shade of blue */
+}
+
+.invoice {
+  margin-top: 30px;
+}
+
+.invoice ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.invoice li {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.edit-button,
+.confirm-button {
+  padding: 10px 20px;
+  background-color: #00457c; /* Starehe Boys Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #00356b; /* Darker blue */
+}

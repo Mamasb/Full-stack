@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the School Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('students') }}">Students</a></li>
+                <li><a href="{{ url_for('teachers') }}">Teachers</a></li>
+                <li><a href="{{ url_for('fees') }}">Fee Calculator</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>School Management at Your Fingertips</h2>
+            <p>Welcome to the digital school management system, where secretaries, teachers, and administrators can manage school records, calculate fees, and maintain important school data. </p>
+            <p>Use the navigation links above to explore the system's features.</p>
+        </section>
+
+        <section class="features">
+            <h3>Features</h3>
+            <ul>
+                <li><strong>Student Management:</strong> Add, view, and edit student details.</li>
+                <li><strong>Fee Calculation:</strong> Calculate and print invoices for student fees.</li>
+                <li><strong>Teacher Management:</strong> Manage teacher profiles and schedules.</li>
+                <li><strong>Administrative Tools:</strong> View reports and maintain school records.</li>
+            </ul>
+        </section>
+
+        <section class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{{ url_for('students') }}">Manage Students</a></li>
+                <li><a href="{{ url_for('teachers') }}">Manage Teachers</a></li>
+                <li><a href="{{ url_for('fees') }}">Calculate Fees</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 School Management System | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

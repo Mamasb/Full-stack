@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fee</title>
+</head>
+<body>
+    <h1>Add Fee</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.student_id.label }} {{ form.student_id() }}
+        {{ form.amount.label }} {{ form.amount() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

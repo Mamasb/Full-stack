@@ -1,0 +1,74 @@
+/* Sidebar.css */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1c3b6f; /* Deep blue */
+  color: white;
+  position: absolute;
+  top: 0;
+  left: -250px; /* Initially hidden off-screen */
+  bottom: 0;
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px; /* Space for the header */
+}
+
+.sidebar.open {
+  left: 0; /* Slide in when open */
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-list li {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-list li:hover {
+  background-color: #d32f2f; /* Starehe red */
+  border-radius: 5px;
+}
+
+/* Styling for the Register and Login links */
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #d32f2f; /* Starehe red */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Make sidebar slightly smaller on mobile */
+    padding-top: 50px; /* Adjust for mobile */
+  }
+
+  .sidebar-list li {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+}
